@@ -113,6 +113,6 @@ io.on('connection', (socket) => {
 });
 
 const PORT = process.env.PORT || 7860; // Hugging Face Spaces defaults to 7860
-server.listen(PORT, () => {
+server.listen(PORT, '0.0.0.0', () => {
   console.log(`Signaling server listening on port ${PORT}`);
 });
